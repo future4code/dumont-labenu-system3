@@ -11,8 +11,17 @@ const app: Express = express()
 app.use(express.json())
 app.use(cors())
 
+// app.post('/', postStudent)
 
-// app.get('/users/all', getAllUsers)
+// app.post('/', postTeacher)
+
+// app.post('/', postClass)
+
+// app.post('/', postStudentToClass)
+
+// app.post('/', postTeacherToClass)
+
+// app.get('/', getAgeStudentById)
 
 
 
