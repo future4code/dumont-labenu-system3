@@ -14,7 +14,7 @@ const createTable = async(): Promise<void> => {
                 name VARCHAR (255) NOT NULL,
                 start_date DATE NOT NULL,
                 finish_date DATE NOT NULL,
-                module ENUM ("1", "2", "3", "4", "5", "6", "7", "UNDEFINED") DEFAULT "UNDEFINED",
+                module ENUM ("first", "second", "third","fourth","fifth","sixth","seventh","undefined"),
                 class_type ENUM ("integral" , "nocturnal")
                 
             );
@@ -45,6 +45,16 @@ const createTable = async(): Promise<void> => {
                 "TYPESCRIPT", "POO", "BACKEND") NOT NULL
             );
         `)
+
+
+        await connection.raw(`
+    
+            CREATE TABLE specialties (
+              teacher_id VARCHAR (255),
+              specialty ENUM ("react","redux","css","testes","typescript","poo","backend")
+            );
+        `)
+
 
         
 

@@ -11,7 +11,10 @@ export const createClass = async(classes: classes): Promise<any> => {
             id: classes.id,
             name: classes.name,
             start_date: classes.start_date,
-            finish_date: classes.finish_date
+            finish_date: classes.finish_date,
+            module: classes.module,
+            class_type: classes.class_type
+
           })
           .into("classes_labenu");
 

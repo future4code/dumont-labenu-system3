@@ -4,10 +4,10 @@ POST  http://localhost:3003/student/createStudent
 Content-Type: application/json
 
 {  
-    "name": "Nhonho", 
-    "email": "nhonho@email.com",
-    "birthday_date": "1948/12/28",
-    "hobbies": " Falar olha ele, olha ele, olha ele, ter constantemente fome e dizer 'Ai meu estomâgo...', provocar  o Chaves com seus doces"
+    "name": "Chaves", 
+    "email": "chaves@email.com", 
+    "birthday_date": "1929/02/21", 
+    "hobbies": "Futebol, comer sanduiche de presunto, dormir no barril e falar isso isso isso."
 }
 
 
@@ -19,8 +19,7 @@ Content-Type: application/json
 {  
     "name": "Dona Florinda", 
     "email": "florinda@email.com",
-    "birthday_date": "1949/02/08",
-    "specialties": " 'testes', 'typescript', 'backend' "
+    "birthday_date": "1949/02/08"
 }
 
 
@@ -33,8 +32,19 @@ Content-Type: application/json
     "name": "Era um vez", 
     "start_date": "2021/03/03",
     "finish_date": "2021/09/10",
-    "module": "6",
+    "module": "second",
     "class_type": "integral"
+}
+
+
+### postStudentToClass
+
+POST  http://localhost:3003/student/class
+Content-Type: application/json
+
+{  
+   "class_id": "6b04aa32-84fa-476e-affc-f3587e363cc4",
+	"id": "4a6cbccd-dda4-4037-bbbf-b77b57a6e84d"
 }
 
 

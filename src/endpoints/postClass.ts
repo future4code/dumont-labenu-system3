@@ -4,6 +4,8 @@ import dotenv from 'dotenv'
 import { v4 as uuidv4 } from 'uuid'
 import { createClass } from '../data/createClass'
 import { classes } from '../types/classes'
+import { MODULE } from '../types/classes'
+import { CLASS_TYPE } from '../types/classes'
 
 
 
@@ -28,7 +30,8 @@ export const postClass =  async (req: Request, res: Response): Promise<void> => 
   
       }
   
-       const newClass: classes = { id, name: name, start_date: start_date, finish_date: finish_date, module: module, class_type: class_type }
+       const newClass: classes = { id, name: name, start_date: start_date, finish_date: finish_date, 
+        module: module, class_type: class_type }
   
        await createClass(newClass)
    
