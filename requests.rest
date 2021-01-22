@@ -1,0 +1,43 @@
+### createStudent
+
+POST  http://localhost:3003/student/createStudent
+Content-Type: application/json
+
+{  
+    "name": "Nhonho", 
+    "email": "nhonho@email.com",
+    "birthday_date": "1948/12/28",
+    "hobbies": " Falar olha ele, olha ele, olha ele, ter constantemente fome e dizer 'Ai meu estomâgo...', provocar  o Chaves com seus doces"
+}
+
+
+### createTeacher
+
+POST  http://localhost:3003/teacher/createTeacher
+Content-Type: application/json
+
+{  
+    "name": "Dona Florinda", 
+    "email": "florinda@email.com",
+    "birthday_date": "1949/02/08",
+    "specialties": " 'testes', 'typescript', 'backend' "
+}
+
+
+### createClass
+
+POST  http://localhost:3003/class/createClass
+Content-Type: application/json
+
+{  
+    "name": "Era um vez", 
+    "start_date": "2021/03/03",
+    "finish_date": "2021/09/10",
+    "module": "6",
+    "class_type": "integral"
+}
+
+
+### getAgeStudentById
+
+GET  http://localhost:3003/studet/015f22d2-2ad2-4253-b3d9-a91d6d335f4e

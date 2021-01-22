@@ -2,6 +2,10 @@ import express, { Express } from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import { AddressInfo } from 'net'
+import { postStudent }  from './endpoints/postStudent'
+import { postTeacher } from './endpoints/postTeacher'
+import { postClass } from './endpoints/postClass'
+import { getAgeStudentById } from './endpoints/getAgeStudentById'
 
 
 
@@ -11,17 +15,17 @@ const app: Express = express()
 app.use(express.json())
 app.use(cors())
 
-// app.post('/', postStudent)
+app.post('/student/createStudent', postStudent)
 
-// app.post('/', postTeacher)
+app.post('/teacher/createTeacher', postTeacher)
 
-// app.post('/', postClass)
+app.post('/class/createClass', postClass)
 
 // app.post('/', postStudentToClass)
 
 // app.post('/', postTeacherToClass)
 
-// app.get('/', getAgeStudentById)
+app.get('/studet/:id', getAgeStudentById)
 
 
 
