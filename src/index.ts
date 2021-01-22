@@ -6,6 +6,7 @@ import { postStudent }  from './endpoints/postStudent'
 import { postTeacher } from './endpoints/postTeacher'
 import { postClass } from './endpoints/postClass'
 import { getAgeStudentById } from './endpoints/getAgeStudentById'
+import { postStudentToClass } from './endpoints/postStudentToClass'
 
 
 
@@ -21,7 +22,7 @@ app.post('/teacher/createTeacher', postTeacher)
 
 app.post('/class/createClass', postClass)
 
-// app.post('/', postStudentToClass)
+app.post('/student/class', postStudentToClass)
 
 // app.post('/', postTeacherToClass)
 

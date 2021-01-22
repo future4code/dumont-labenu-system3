@@ -3,11 +3,11 @@ export type teacher = {
     name: string,
     email: string,
     birthday_date: Date,
-    specialties: specialties
+   
 }
 
 
-export enum specialties {
+export enum SPECIALTIES {
     REACT = "react",
     REDUX = "redux",
     CSS = "css",

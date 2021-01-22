@@ -18,17 +18,17 @@ export const postTeacher =  async (req: Request, res: Response): Promise<void> =
 
     try {
   
-      const { name, email, birthday_date, specialties} = req.body
+      const { name, email, birthday_date} = req.body
   
       const id = uuidv4()
   
-      if (!name || !email || !birthday_date || !specialties) {
+      if (!name || !email || !birthday_date) {
   
         throw new Error("Nome, email, data de nascimento ou especialidades não informados!")
   
       }
   
-       const newTeacher: teacher = {id, name: name, email: email, birthday_date: birthday_date, specialties: specialties}
+       const newTeacher: teacher = {id, name: name, email: email, birthday_date: birthday_date }
   
        await createTeacher(newTeacher)
    

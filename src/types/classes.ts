@@ -3,24 +3,24 @@ export type classes = {
     name: string,
     start_date: Date,
     finish_date: Date,
-    module: module,
-    class_type: class_type
+    module: MODULE,
+    class_type: CLASS_TYPE
 }
 
 
-export enum module {
-    FIRST ="1",
-    SECOND ="2",
-    THIRD ="3",
-    BEDROOM ="4",
-    FIFTH ="5",
-    SIXTH ="6",
-    SEVENTH ="7",
+export enum MODULE {
+    FIRST = "first",
+    SECOND ="second",
+    THIRD ="third",
+    FOURTH ="fourth",
+    FIFTH ="fifth",
+    SIXTH ="sixth",
+    SEVENTH ="seventh",
     UNDEFINED = "undefined"
 }
 
 
-export enum class_type {
+export enum CLASS_TYPE {
     INTEGRAL="integral",
     NOCTURNAL="nocturnal"
 }
